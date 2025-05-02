@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.antialiased {
+  margin-top: 100px;
+}
+
+.main-header {
+  background: #5099b7;
+    /* border-radius: 10px; */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 10px 15px;
+    top: 0;
+}
+
+.main-shop {
+	color: #ffffff;
+}
+
+.product-title, .category-grid h3 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.add-to-cart-btn, .view-btn, button, .button {
+  border: 1px solid #5099b7 !important;
+  background: inherit !important;
+  color: #5099b7 !important;
+  font-size: 16px !important;
+  line-height: 27px !important;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:hover, .view-btn:hover, button:hover, .button:hover {
+  color: #ffffff !important;
+  background: #5099b7 !important;
+}
+
+.product-price {
+	color: #5099b7;
+}
+
+
+.product-box, .category-box {
+	background: #f5f5f5;
+  border: 1px solid #dddddd;
+}
+
+.no-products-found {
+  text-align: center;
+}
+
+.details-right {
+  background: #f5f5f5;
+}
+
+nav > .hidden {
+  gap: 15px;
+}
+
+nav > .hidden span {
+  height: 38px;
+}
+
+nav > .hidden span button {
+  line-height: initial !important;
+  font-size: 15px !important;
+  border: 1px solid #ddd !important;
+  border-radius: inherit;
+}
+
+.cart-btn a:hover {
+  color: #000000;
+}
+
+.cart-btn a:focus, .cart-btn a:focus-visible {
+  outline: none;
+  border:none;
+  text-decoration:none;
+  box-shadow: none;
+}
+
+.back-to-products:hover {
+  color: #5099b7;
+}
+
+
+.search-input {
+    height: 42px;
+    width: 400px;
+    border: none;
+}
+
+.search-btn {
+    background: #ffffff !important;
+    color: #000 !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 1px;
+    border: none !important;
+    top: 1px;
+    height: 40px;
+}
+
+.logout-btn button {
+    padding: 5px 15px;
+}
+
+button.remove-btn {
+    padding: 8px;
+}
+
+.login-page, .register-page {
+    margin-top: -100px;
+}
+
+.forgot-your-ppassword, .register-here, .back-to-products, .signin-text {
+  color: #5099b7;
+}
+
+.login-form, .register-form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.user-dropdown {
+    color: #fff !important;
+
+}
+
+.user-dropdown:hover {
+  color: #000000;
+}
+
+.search-close-btn {
+    top: 0;
+    position: absolute;
+    z-index: 666;
+    border: none !important;
+    right: 65px;
+}
+
+.login-form input:focus, .register-form input:focus {
+    border-color: #5099b7;
+    box-shadow: inherit;
+}
+
+.settings-dropdown .dropdown-menu {
+    color: #000000;
+}
+
+.settings-dropdown .dropdown-menu:hover {
+  color: #5099b7;
+}
+
+
+.country-btn {
+    background: inherit !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.country-btn:hover {
+    background: inherit !important;
+    color: #5099b7 !important;
+}
+
+
+.checkout-form input:focus {
+    border-color: #5099b7;
+    box-shadow: none;
+}
+
+.register-btn {
+  background-color: inherit !important;
+  color: #ffffff !important;
+}
+
+.register-btn:hover {
+  color: #000000 !important;
+}
+
+.search-input:focus {
+    border-color: #5099b7 !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 1200px) {
+  .search-input {
+    width: 250px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .main-header a {
+    margin-left: 10px !important;
+}
+
+.main-header .hidden.space-x-8.sm\:-my-px.sm\:ml-10.sm\:flex {
+    margin-left: 15px;
+}
+
+  .search-input {
+    width: 200px;
+}
+
+.user-dropdown {
+   padding: 0;
+    margin-left: 10px;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+/*  .main-header a {
+    margin-left: 10px !important;
+}*/
+
+.main-header .max-w-7x2.mx-auto.px-4.sm\:px-6.lg\:px-8 {
+    padding: 0;
+}
+
+
+
+.main-header .hidden.space-x-8.sm\:-my-px.sm\:ml-10.sm\:flex {
+    margin-left: 15px;
+}
+
+.main-header a.inline-flex.items-center.px-1.pt-1.text-sm.font-medium.leading-5.transition.duration-150.ease-in-out.text-white.hover\:text-black {
+    margin-left: 5px;
+}
+
+.main-header .hidden.sm\:flex.sm\:items-center.sm\:ml-6.settings-dropdown {
+    margin-left: 5px;
+}
+
+a.ml-4.p-1.rounded-full.text-white.hover\:text-black.relative {
+    margin-left: 0;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+  .antialiased {
+    margin-top: 0;
+  }
+
+  .container.mx-auto.px-4.py-8 {
+    padding: 0;
+}
+
+  .main-header {
+    position: inherit;
+    margin-bottom: 30px;
+
+  }
+
+  .grid {
+    padding: 15px;
+}
+
+
+}
